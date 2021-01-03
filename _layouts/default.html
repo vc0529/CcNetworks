@@ -40,7 +40,7 @@
 			<nav {% if site.show_full_navigation %}class="full-navigation"{% endif %}>
 				<ul>
 					<li class="nav-item top-level {% if page.url == '/' %}current{% endif %}">
-						{% assign home = site.html_pages | where: 'url', '/' | first %}
+						{% assign home = site.html_pages | where: 'url', '/changelog/' | first %}
 						<a href="{{ site.baseurl }}/">{{ home.title }}</a>
 					</li>
 				</ul>
